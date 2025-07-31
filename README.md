@@ -1,4 +1,4 @@
-# Kernel-Hardening
+# kernel.dotfiles
 
 > [!IMPORTANT]
 > Read content of files before proceeding, certains features are disabled.
