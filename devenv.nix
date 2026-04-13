@@ -2,19 +2,10 @@
 
 {
   # https://devenv.sh/packages/
-  packages = with pkgs; [ git mdformat nixfmt-classic ];
+  packages = with pkgs; [ git ];
 
   # https://devenv.sh/languages/
   languages.shell.enable = true;
-
-  # https://devenv.sh/tasks/
-  tasks = {
-    "lint:run".exec = ''
-      mdformat README.md
-      nixfmt devenv.nix
-      shellcheck kernel.sh
-      shfmt -w kernel.sh'';
-  };
 
   # https://devenv.sh/tests/
   enterTest = ''
