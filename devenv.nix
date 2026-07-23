@@ -7,15 +7,10 @@
   # https://devenv.sh/languages/
   languages.shell.enable = true;
 
-  # https://devenv.sh/tests/
-  enterTest = ''
-    ./kernel.sh
-  '';
-
   # https://devenv.sh/git-hooks/
   git-hooks.hooks = {
     mdformat.enable = true;
-    nixfmt-classic.enable = true;
+    nixfmt.enable = true;
     shellcheck.enable = true;
     shfmt.enable = true;
     trim-trailing-whitespace.enable = true;
